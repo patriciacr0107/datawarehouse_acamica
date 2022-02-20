@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "62046caafee9df1f60cbcd17"
+  },
+  "name": "sudamérica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62046ee4fee9df1f60cbcd1b"
+  },
+  "name": "norteamérica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6205ce4405f2341a0c83bef3"
+  },
+  "name": "asia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6205ceff05f2341a0c83bef4"
+  },
+  "name": "africa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6205cf6005f2341a0c83bef5"
+  },
+  "name": "nueva 2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6206ad7679cc2e28bc57139d"
+  },
+  "name": "europa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6207010079cc2e28bc5713ae"
+  },
+  "name": "nueva 7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6207012f79cc2e28bc5713b1"
+  },
+  "name": "nueva 8",
+  "__v": 0
+}]

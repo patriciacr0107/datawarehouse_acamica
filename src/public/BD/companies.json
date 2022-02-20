@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "620714ff79cc2e28bc5713b8"
+  },
+  "name": "data warehouse",
+  "address": "cll 15 medellin",
+  "email": "datawarehouse@datawarehouse.com",
+  "phone": 12312412,
+  "city": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620adb1f715c4f06d01f5319"
+  },
+  "name": "universidad de medellin",
+  "address": "carrera 87 n° 30 – 65",
+  "email": "contacto@udemedellin.edu.co",
+  "phone": "(604) 590 6999",
+  "city": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620b1bd0715c4f06d01f531c"
+  },
+  "name": "globant",
+  "address": "globant north park, correa 2442, c.p.: c1429drn",
+  "email": "hi@globant.com",
+  "phone": "+1 877 215 5230",
+  "city": {
+    "$oid": "620b1b92715c4f06d01f531b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620b2a54715c4f06d01f531d"
+  },
+  "name": "universidad nacional sede medellin",
+  "address": "av. 80 ##65 - 223",
+  "email": "webmaster_med@unal.edu.co",
+  "phone": "(+57) 316 5000",
+  "city": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fde40c2066f4ee0272e63"
+  },
+  "name": "ecopetrol",
+  "address": "edificio principal cr. 13 no. 36 - 24",
+  "email": "ecopetrol@contactos.com",
+  "phone": "+57 310 315 8600",
+  "city": {
+    "$oid": "620fdda2c2066f4ee0272e5f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fde77c2066f4ee0272e64"
+  },
+  "name": "constructora aa",
+  "address": "cr787 cll 345",
+  "email": "aa@contactos.com",
+  "phone": "5556678",
+  "city": {
+    "$oid": "620fddb1c2066f4ee0272e60"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62107dac5161643a089fae42"
+  },
+  "name": "goku",
+  "address": "cl 46 sur cr 46 c 100",
+  "email": "jvascov@gmail.com",
+  "phone": "+573008700263",
+  "city": {
+    "$oid": "620fdda2c2066f4ee0272e5f"
+  },
+  "__v": 0
+}]

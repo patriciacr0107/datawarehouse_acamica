@@ -1,0 +1,37 @@
+.contenedor-contactos {
+    display: grid;
+    grid-template-columns: 37% 3% auto 3% 13% 13%;
+    grid-template-rows: 78px 41px 73px auto 80px;    
+    height:100vh;
+    display: none;
+}
+.contenedor-contactos h1 {
+    margin: 20px 0 20px 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: bold;
+    color: #404336;
+}
+#busqueda-contacto {
+    margin-left: 30px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 41px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3.5px;
+}
+.contenedor-contactos .btn-buscar {
+    margin-left: 2px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 41px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3.5px;
+}

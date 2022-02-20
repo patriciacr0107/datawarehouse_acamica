@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Warehouse</title>
+    <link rel="stylesheet" href="css/datawarehouse.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div id='menu'>
+            <nav>
+                <div class="nav">
+                    <a href="contactos.html" class="link-home">Data Warehouse</a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="contactos.html" class="item-menu">Contactos</a></li>
+                            <li><a href="companias.html" class="item-menu">Compañías</a>
+                            </li>
+                            <li id='mnu-usuarios'><a href="usuarios.html" class="item-menu">Usuarios</a></li>
+                            <li><a href="regiones.html" class="item-menu">Región / Ciudad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="contenedor-contactos" id="contenedor-usuarios">
+            <h1 class="titulo-seccion">Compañías</h1>
+            <div class="opciones">
+                <a href="#contenedor-edicion" onclick=mostrarFormAgregar()>
+                    <input type="button" value="Agregar Compañía" class="btn-principal">
+                </a>
+            </div>
+            <div class="contenedor-busqueda">
+                <div class="contenedor-busqueda-items">
+                    <input type="text" name="" id="txt-buscar" class="input" placeholder="Buscar compañía por nombre">
+                    <div class="btn-buscar" id='btn-buscar'>
+                        <span class="material-icons-outlined material-icons btn-buscar-icon">
+                            search
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="datos-usuario" class="contenedor-datos">
+                <table class="datos-contactos" cellpadding="2" cellspacing="5" id="tbl-companias">
+                    <!--<tr>
+                        <th>
+                            <div class="titulo">
+                                <span>Nombre </span>
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Ciudad / País</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Email</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Teléfono</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Direccion</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Acciones</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Globant</td>
+                        <td>Buenos Aires - Argentina</td>
+                        <td>hi@globant.com - +1 877 215 5230</td>
+                        <td>Globant North Park, Correa 2442, C.P.: C1429DRN</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Universidad de Medellin</td>
+                        <td>Medellin - Colombia</td>
+                        <td>contacto@udemedellin.edu.co - (604) 590 6999</td>
+                        <td>Carrera 87 N° 30 – 65</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Ecopetrol</td>
+                        <td>Bogotá - Colombia</td>
+                        <td>contacto@ecopetrol.com.co - +57 310 315 8600.</td>
+                        <td>Edificio Principal Cr. 13 No. 36 - 24</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Ecopetrol</td>
+                        <td>Bogotá - Colombia</td>
+                        <td>contacto@ecopetrol.com.co - +57 310 315 8600.</td>
+                        <td>Edificio Principal Cr. 13 No. 36 - 24</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Ecopetrol</td>
+                        <td>Bogotá - Colombia</td>
+                        <td>contacto@ecopetrol.com.co - +57 310 315 8600.</td>
+                        <td>Edificio Principal Cr. 13 No. 36 - 24</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Ecopetrol</td>
+                        <td>Bogotá - Colombia</td>
+                        <td>contacto@ecopetrol.com.co - +57 310 315 8600.</td>
+                        <td>Edificio Principal Cr. 13 No. 36 - 24</td>
+                        <td>...</td>
+                    </tr>-->
+                </table>
+            </div>
+            <div class="cantidad-pagina" id="contenedor-paginacion">
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(-1)">
+                    navigate_before
+                </span>
+                <span id="cantidad-pagina">1 - 10 de 30 filas</span>
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(1)">
+                    navigate_next
+                </span>
+
+            </div>
+            <div id="filtro-pagina" class="filtro-pagina">Filas por pagina: <select name="" id="filas-pg"
+                    class="select-filas">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select></div>
+
+        </div>
+
+        <div id="contenedor-edicion" class="modal">
+
+
+            <div class="ventana-edicion ventana-edicion-usuarios">
+                <a href="#" style='text-decoration:none;' class="close-icon">
+                    <span class="material-icons-outlined material-icons icono-ordenar">
+                        close
+                    </span>
+                </a>
+                <h1 class="titulo-seccion" id="titulo-modal">Adicionar Compañía</h1>
+                <div class="datos-principales-usuario">
+                    <Span class="titulo-1">Nombre<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="nombre" class="input campo-1">
+                    <Span class="titulo-2">Direccion<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="direccion" class="input campo-2">
+                    <Span class="titulo-3">Email<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="email" class="input campo-3">
+                    <Span class="titulo-4">Teléfono<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="telefono" class="input campo-4">
+                    <Span class="titulo-5">Pais<span class="campo-obl">*</span></Span>
+                    <select name="" id="pais" class="select campo-5">
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <Span class="titulo-6">Ciudad<span class="campo-obl">*</span></Span>
+                    <select name="" id="ciudad" class="select campo-6">
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+
+                </div>
+                <div class="datos-generales-usuario">
+                    <input type="button" id="btn-guardar-compania" value="Guardar Compañía"
+                        class="btn-principal btn-guardar">
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/companias.js"></script>
+</body>
+
+</html>

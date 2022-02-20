@@ -1,0 +1,170 @@
+[{
+  "_id": {
+    "$oid": "620dcf415f074b15405cc945"
+  },
+  "chanels": [
+    {
+      "id": 1,
+      "canal": "Whatsapp",
+      "cuentaUsuario": "345678",
+      "preferencia": "No Molestar"
+    },
+    {
+      "id": 2,
+      "canal": "Instagram",
+      "cuentaUsuario": "pat123",
+      "preferencia": "Canal Favorito"
+    },
+    {
+      "id": 3,
+      "canal": "Twitter",
+      "cuentaUsuario": "otro",
+      "preferencia": "Sin Preferencia"
+    },
+    {
+      "id": 4,
+      "canal": "Linkedin",
+      "cuentaUsuario": "patricia",
+      "preferencia": "Canal Favorito"
+    }
+  ],
+  "names": "patricia",
+  "surnames": "carmona",
+  "email": "patricia123@gmail.com",
+  "position": "analista",
+  "address": "cll 11 cr 28 - 17",
+  "interest": 75,
+  "company": {
+    "$oid": "620b2a54715c4f06d01f531d"
+  },
+  "city": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620e834398e85622ecd9f987"
+  },
+  "chanels": [],
+  "names": "paula",
+  "surnames": "perez",
+  "email": "p@p.com",
+  "position": "desarroladora",
+  "address": "",
+  "interest": 50,
+  "company": {
+    "$oid": "620714ff79cc2e28bc5713b8"
+  },
+  "city": {
+    "$oid": "620b1b92715c4f06d01f531b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdef2c2066f4ee0272e66"
+  },
+  "chanels": [],
+  "names": "admin",
+  "surnames": "admin",
+  "email": "admin@datawarehouse.com",
+  "position": "adminsitrador",
+  "address": "",
+  "interest": null,
+  "company": {
+    "$oid": "620714ff79cc2e28bc5713b8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdf2cc2066f4ee0272e67"
+  },
+  "chanels": [
+    {
+      "id": 1,
+      "canal": "Telefono",
+      "cuentaUsuario": "1111",
+      "preferencia": "Sin Preferencia"
+    },
+    {
+      "id": 2,
+      "canal": "Whatsapp",
+      "cuentaUsuario": "1234",
+      "preferencia": "Canal Favorito"
+    }
+  ],
+  "names": "sandra",
+  "surnames": "toro",
+  "email": "sandra@gmail.com",
+  "position": "analista",
+  "address": "cll 11 cr 22",
+  "interest": 25,
+  "company": {
+    "$oid": "620fde40c2066f4ee0272e63"
+  },
+  "city": {
+    "$oid": "620fdda2c2066f4ee0272e5f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdf47c2066f4ee0272e68"
+  },
+  "chanels": [],
+  "names": "s",
+  "surnames": "s",
+  "email": "s@s.com",
+  "position": "s",
+  "address": "",
+  "interest": null,
+  "company": {
+    "$oid": "620fde77c2066f4ee0272e64"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdf9ac2066f4ee0272e6a"
+  },
+  "chanels": [],
+  "names": "prueba",
+  "surnames": "prueba",
+  "email": "prueba@p.com",
+  "position": "prueba",
+  "address": "",
+  "interest": null,
+  "company": {
+    "$oid": "620714ff79cc2e28bc5713b8"
+  },
+  "city": {
+    "$oid": "6206fdc579cc2e28bc5713a3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fe004c2066f4ee0272e6b"
+  },
+  "chanels": [
+    {
+      " account": "@facebook",
+      " preferences": 2,
+      " chanel": 1
+    },
+    {
+      " account": "@facebook",
+      " preferences": 2,
+      " chanel": 2
+    }
+  ],
+  "names": "patricia",
+  "surnames": "carmona",
+  "email": "patricia@gmail.com",
+  "position": "full stack developer",
+  "address": "cll 123 cr 123",
+  "interest": 85,
+  "company": {
+    "$oid": "620b2a54715c4f06d01f531d"
+  },
+  "city": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "__v": 0
+}]

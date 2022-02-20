@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Warehouse</title>
+    <link rel="stylesheet" href="css/datawarehouse.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div id='menu'>
+            <nav>
+                <div class="nav">
+                    <a href="contactos.html" class="link-home">Data Warehouse</a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="contactos.html" class="item-menu">Contactos</a></li>
+                            <li><a href="companias.html" class="item-menu">Compañías</a>
+                            </li>
+                            <li id='mnu-usuarios'><a href="usuarios.html" class="item-menu">Usuarios</a></li>
+                            <li><a href="regiones.html" class="item-menu">Región / Ciudad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="contenedor-contactos" id="contenedor-contactos">
+            <h1 class="titulo-seccion">Contactos <span id="total-sel"></span></h1>
+            <div class="opciones">
+                <input type="button" value="Exportar contactos" class="btn-secundario" id="btn-exportar">
+                <input type="button" value="Borrar contactos" class="btn-secundario" id="btn-eliminar">
+                <a href="#contenedor-edicion" onclick=mostrarFormAgregar()>
+                    <input type="button" value="Agregar contacto" class="btn-principal">
+                </a>
+            </div>
+            <div class="contenedor-busqueda">
+                <div class="contenedor-busqueda-items">
+                    <div class="input" id="btn-mostrar-filtros">
+                        <span class="material-icons-outlined material-icons">
+                            arrow_drop_down
+                        </span>
+                    </div>
+                    <div class="btn-buscar" id="btn-buscar">
+                        <span class="material-icons-outlined material-icons btn-buscar-icon">
+                            search
+                        </span>
+                    </div>
+                    <div class="filtros-busqueda" id="filtros-busqueda">
+                        <Span class="titulo-1">Nombre contacto</Span><input type="text" name="" id="nombre-busq"
+                            class="input campo-1">
+                        <Span class="titulo-2">Cargo</Span><input type="text" name="" id="cargo-busq"
+                            class="input campo-2">
+                        <Span class="titulo-3">País/Ciudad</Span><select name="pais" id="pais-busq"
+                            class="select campo-3">
+                            <option value="Todos">Todos</option>
+                        </select>
+                        <Span class="titulo-4">Compañía</Span><select name="compania" id="compania-busq"
+                            class="select campo-4">
+                            <option value="Todas">Todas</option>
+                        </select>
+                        <Span class="titulo-5">Interés</Span><select name="interes" id="interes-busq"
+                            class="select campo-5">
+                            <option value="Todos">Todos</option>
+                            <option value="0">0%</option>
+                            <option value="25">25%</option>
+                            <option value="50">50%</option>
+                            <option value="75">75%</option>
+                            <option value="100">100%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="datos contacto" class="contenedor-datos">
+                <table class="datos-contactos" cellpadding="2" cellspacing="5" id="tbl-contactos">
+                    <!-- <tr>
+                        <th></th>
+                        <th>
+                            <div class="titulo">
+                                <span>Contacto</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                País/Región
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Compañía
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Cargo
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Interés
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Acciones</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>70%
+                            <meter id="file" max="100" value="70" low="25" high="75" optimum="100"> 70%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>90%
+                            <meter id="file" max="100" value="90" low="25" high="75" optimum="100"> 90%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>10%
+                            <meter id="file" max="100" value="10" low="25" high="75" optimum="100"> 10%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>10%
+                            <meter id="file" max="100" value="10" low="25" high="75" optimum="100"> 10%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>10%
+                            <meter id="file" max="100" value="10" low="25" high="75" optimum="100"> 10%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>Soledad Castro</td>
+                        <td>Argentina</td>
+                        <td>Ecom Experts</td>
+                        <td>UX Designer</td>
+                        <td>10%
+                            <meter id="file" max="100" value="10" low="25" high="75" optimum="100"> 10%
+                            </meter>
+                        </td>
+                        <td>...</td>
+                    </tr>-->
+                </table>
+            </div>
+            <div class="cantidad-pagina" id="contenedor-paginacion">
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(-1)">
+                    navigate_before
+                </span>
+                <span id="cantidad-pagina">
+                    1 - 10 de 30 filas
+                </span>
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(1)">
+                    navigate_next
+                </span>
+
+            </div>
+            <div id="filtro-pagina" class="filtro-pagina">Filas por pagina: <select name="" id="filas-pg"
+                    class="select-filas">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select></div>
+
+        </div>
+
+        <div id="contenedor-edicion" class="modal">
+
+
+            <div class="ventana-edicion ventana-edicion-contactos">
+                <a href="#" style='text-decoration:none;' class="close-icon">
+                    <span class="material-icons-outlined material-icons icono-ordenar">
+                        close
+                    </span>
+                </a>
+                <h1 class="titulo-seccion" id="titulo-modal">Adicionar Contacto</h1>
+                <div class="datos-principales">
+                    <Span class="titulo-1">Nombre<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="nombre-add" class="input campo-1">
+                    <Span class="titulo-2">Apellidos<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="apellidos-add" class="input campo-2">
+                    <Span class="titulo-3">Email<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="email-add" class="input campo-3">
+                    <Span class="titulo-4">Cargo<span class="campo-obl">*</span></Span><input type="text" name=""
+                        id="cargo-add" class="input campo-4">
+                    <Span class="titulo-5">Compañía<span class="campo-obl">*</span></Span>
+                    <select name="" id="compania-add" class="select campo-5">
+                        <option value="">compañia 1</option>
+                        <option value=""></option>
+                    </select>
+
+                </div>
+                <div class="datos-generales">
+                    <Span class="titulo-1">Región</Span><select name="region" id="region" class="select campo-1">
+                        <option value="SinRegion">Seleccione la region</option>
+                    </select>
+                    <Span class="titulo-2">País</Span><select name="pais" id="pais-add" class="select campo-2">
+                        <option value="SinRegion">Seleccione el país</option>
+                    </select>
+                    <Span class="titulo-3">Ciudad</Span><select name="ciudad" id="ciudad-add" class="select campo-3">
+                        <option value="SinRegion">Seleccione la ciudad</option>
+                    </select>
+                    <Span class="titulo-4">Dirección</Span><input type="text" name="direccion" id="direccion-add"
+                        class="input campo-4">
+                    <Span class="titulo-5">Interes</Span><select name="interes" id="interes-add" class="select campo-5">
+                        <option value="0">0%</option>
+                        <option value="25">25%</option>
+                        <option value="50">50%</option>
+                        <option value="75">75%</option>
+                        <option value="100">100%</option>
+                    </select>
+                    <div class="contenedor-canal">
+                        <Span class="titulo-6">Canal de contacto</Span>
+                        <select name="canal" id="canal-add" class="select campo-6">
+                            <option value="Telefono">Teléfono</option>
+                            <option value="Whatsapp">Whatsapp</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Linkedin">Linkedin</option>
+                        </select>
+                        <Span class="titulo-7">Cuenta de usuario</Span><input type="text" name="usuario" id="usuario"
+                            class="input campo-7">
+                        <Span class="titulo-8">Preferencia</Span>
+                        <select name="preferencia" id="preferencia" class="select campo-8">
+                            <option value="Sin Preferencia">Sin preferencia</option>
+                            <option value="Canal Favorito">Canal Favorito</option>
+                            <option value="No Molestar">No Molestar</option>
+                        </select>
+                        <div class="agregar-canal-btn btn-secundario" id="btn-canal">+Canal</div>
+                        <div class="datos-canal">
+                            <table class="datos-contactos" cellpadding="2" cellspacing="5" id="datos-canal-tbl">
+                                <tr>
+                                    <th>
+                                        Canal
+
+                                    </th>
+                                    <th>
+                                        Cuenta
+
+                                    </th>
+                                    <th>
+                                        Preferencia
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <input type="button" value="Guardar contacto" class="btn-principal btn-guardar"
+                        id="btn-guardar-contacto">
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/contactos.js"></script>
+</body>
+
+</html>

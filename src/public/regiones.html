@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Warehouse</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/datawarehouse.css">
+
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div id='menu'>
+            <nav>
+                <div class="nav">
+                    <a href="contactos.html" class="link-home">Data Warehouse</a>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="contactos.html" class="item-menu">Contactos</a></li>
+                            <li><a href="companias.html" class="item-menu">Compañías</a>
+                            </li>
+                            <li id='mnu-usuarios'><a href="usuarios.html" class="item-menu">Usuarios</a></li>
+                            <li><a href="regiones.html" class="item-menu">Región / Ciudad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="contenedor-contactos" id="contenedor-usuarios">
+            <h1 class="titulo-seccion">Regiones / Paises / Ciudades</h1>
+            <div class="opciones">
+                <input type="button" value="Agregar Región" class="btn-principal" id="add-region-btn">
+            </div>
+            <div class="contenedor-busqueda">
+                <div class="contenedor-busqueda-items">
+                    <input type="text" name="" id="txt-buscar" class="input" placeholder="Buscar por región">
+                    <div class="btn-buscar" id='btn-buscar'>
+                        <span class="material-icons-outlined material-icons btn-buscar-icon">
+                            search
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="datos-regiones" class="contenedor-datos">
+                <table class="datos-regiones" id="tbl-regiones">
+                    <!--<tr class="fila-region">
+                        <td colspan="3">Sudamérica</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+                                <div class="btn-tbl-add">+País</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td colspan="2">Colombia</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+                                <div class="btn-tbl-add">+Ciudad</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td class="region-tbl"></td>
+                        <td class="pais-tbl"></td>
+                        <td class="ciudad-tbl">Medellín</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td></td>
+                        <td>Bogotá</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td colspan="2">Argentina</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+                                <div class="btn-tbl-add">+Ciudad</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td></td>
+                        <td>Buenos Aires</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td></td>
+                        <td>Córdoba</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-region">
+                        <td colspan="3">Norteamérica</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+                                <div class="btn-tbl-add">+País</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td colspan="2">México</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+                                <div class="btn-tbl-add">+Ciudad</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="fila-otr">
+                        <td></td>
+                        <td></td>
+                        <td>Tijuana</td>
+                        <td class="opciones-tbl">
+                            <div class="opciones-fila"><span class="material-icons-outlined material-icons btn-tbl">
+                                    edit
+                                </span>
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    delete
+                                </span>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cont-edicion-tbl">
+                                <input type="text" name="" id="" class="input">
+                                <span class="material-icons-outlined material-icons btn-tbl">
+                                    save
+                                </span>
+
+                            </div>
+                        </td>
+                    </tr>-->
+                </table>
+            </div>
+            <div class="cantidad-pagina">
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(-1)">
+                    navigate_before
+                </span>
+                <span id="cantidad-pagina">1 - 10 de 30 regiones</span>
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(1)">
+                    navigate_next
+                </span>
+
+            </div>
+            <div id="filtro-pagina" class="filtro-pagina">Regiones por página: <select name="" id="filas-pg"
+                    class="select-filas">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="todas">Todas</option>
+                </select></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/regiones.js"></script>
+</body>
+
+</html>

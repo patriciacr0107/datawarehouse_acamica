@@ -1,0 +1,86 @@
+:root {
+    --color-principal: #17a2b8;
+    --color-secundario: #C2C7B4;
+    --color-fuente-titulos: #453009;
+    --color-fuente: #FFFFFF;
+    --color-btn-principal: #81876C;
+    --letra-principal: 'Poppins', sans-serif;
+    --letra-nombre: 'Kaushan Script', cursive;
+}
+html {
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background: linear-gradient(to top, #C0C9A0 10%, var(--color-principal) 90%)
+    no-repeat;
+    height:100vh;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--letra-principal);
+    color: var(--color-fuente-titulos)
+}
+.contenedor-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    
+}
+.login {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+    align-items: center;
+    
+}
+.titulo-seccion {
+    font-family: var(--letra-nombre);
+    font-weight: bold;
+    font-size: 2.5em;
+}
+h3 {
+    font-size: medium;
+}
+
+.input {
+    border: 1px solid #CCCCCC;
+    width: 200px;
+    height: 25px;
+    padding: 3px;
+    border-radius: 4px;
+    margin: 10px 0 10px 0;
+    font-family: var(--letra-principal);
+}
+.btn-principal {
+    width: 170px;
+    height: 35px;
+    background-color: var(--color-btn-principal);
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    margin-top: 10px;
+    font-family: var(--letra-principal);
+}
+.btn-secundario {
+    width: 170px;
+    height: 35px;
+    background-color: var(--color-secundario);
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #CCCCCC;
+    font-family: var(--letra-principal);
+    
+}

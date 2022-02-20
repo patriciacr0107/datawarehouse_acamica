@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Warehouse</title>
+    <link rel="stylesheet" href="css/datawarehouse.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div id="menu">
+            <nav>
+                <div class="nav">
+                    <a href="contactos.html" class="link-home">Data Warehouse</a>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="contactos.html" class="item-menu">Contactos</a>
+                            </li>
+                            <li>
+                                <a href="companias.html" class="item-menu">Compañías</a>
+                            </li>
+                            <li id="mnu-usuarios">
+                                <a href="usuarios.html" class="item-menu">Usuarios</a>
+                            </li>
+                            <li>
+                                <a href="regiones.html" class="item-menu">Región / Ciudad</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="contenedor-contactos" id="contenedor-usuarios">
+            <h1 class="titulo-seccion">Usuarios</h1>
+            <div class="opciones">
+                <a href="#contenedor-edicion" onclick="mostrarFormAgregar()">
+                    <input type="button" value="Agregar usuario" class="btn-principal" />
+                </a>
+            </div>
+            <div class="contenedor-busqueda">
+                <div class="contenedor-busqueda-items">
+                    <input type="text" name="" id="txt-buscar" class="input" placeholder="Buscar por nombre" />
+                    <div class="btn-buscar" id="btn-buscar">
+                        <span class="material-icons-outlined material-icons btn-buscar-icon">
+                            search
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="datos-usuario" class="contenedor-datos">
+                <table class="datos-contactos" cellpadding="2" cellspacing="5" id="tbl-usuarios">
+                    <!--<tr>
+                        <th>
+                            <div class="titulo">
+                                <span>Nombre </span>
+                                <span class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Apellido</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Email</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">
+                                <span>Perfil</span>
+                                <span id="orden-contacto" class="material-icons-outlined material-icons icono-ordenar">
+                                    import_export
+                                </span>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="titulo">Acciones</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Soledad</td>
+                        <td>Castro</td>
+                        <td>soledad@gmail.com</td>
+                        <td>Admin</td>
+                        <td>...</td>
+                    </tr> -->
+                </table>
+            </div>
+            <div class="cantidad-pagina" id="contenedor-paginacion">
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(-1)">
+                    navigate_before
+                </span>
+                <span id="cantidad-pagina">
+                    1 - 10 de 30 filas
+                </span>
+                <span class="material-icons-outlined material-icons icono-ordenar" onclick="cambiarPagina(1)">
+                    navigate_next
+                </span>
+            </div>
+            <div id="filtro-pagina" class="filtro-pagina">
+                Filas por pagina:
+                <select name="" id="filas-pg" class="select-filas">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="contenedor-edicion" class="modal">
+            <div class="ventana-edicion ventana-edicion-usuarios">
+                <a href="#" style="text-decoration: none;" class="close-icon">
+                    <span class="material-icons-outlined material-icons icono-ordenar">
+                        close
+                    </span>
+                </a>
+                <h1 class="titulo-seccion" id="titulo-modal">Adicionar Usuario</h1>
+                <div class="datos-principales-usuario">
+                    <span class="titulo-1">Nombre<span class="campo-obl">*</span></span><input type="text" name=""
+                        id="nombre" class="input campo-1" />
+                    <span class="titulo-2">Apellido<span class="campo-obl">*</span></span><input type="text" name=""
+                        id="apellidos" class="input campo-2" />
+                    <span class="titulo-3">Email<span class="campo-obl">*</span></span><input type="text" name=""
+                        id="email" class="input campo-3" />
+                    <span class="titulo-4">Perfil<span class="campo-obl">*</span></span>
+                    <select name="" id="perfil" class="select campo-4">
+                        <option value="user">Básico</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <span class="titulo-5" id="titulo-pw">Contraseña<span class="campo-obl">*</span></span><input
+                        type="password" name="" id="password" class="input campo-5" />
+                    <span class="titulo-6" id="titulo-pw2">Repetir Contraseña<span
+                            class="campo-obl">*</span></span><input type="password" name="" id="password2"
+                        class="input campo-6" />
+                </div>
+                <div class="datos-generales-usuario">
+                    <input type="button" id="btn-guardar-usuario" value="Guardar Usuario"
+                        class="btn-principal btn-guardar" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/usuarios.js"></script>
+</body>
+
+</html>

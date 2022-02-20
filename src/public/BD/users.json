@@ -1,0 +1,122 @@
+[{
+  "_id": {
+    "$oid": "61f9cc8ccf9ac14d586f11c5"
+  },
+  "active": true,
+  "role": "admin",
+  "name": "admin",
+  "lastname": "admin",
+  "email": "admin@datawarehouse.com",
+  "password": "$2a$12$N4LZv4nb318164oWOYj9ge5JsVqf3VU09/aN8KbV80kFeJR6O4.lu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62009d7b93c8c5450cd53bf3"
+  },
+  "active": true,
+  "role": "user",
+  "name": "carlos",
+  "lastname": "medina perez",
+  "email": "carlos.medina@gmail.com",
+  "password": "$2a$12$RDm59lc7AvyfG79H.KRcbOs8op2spys5sGH9SOZyvSIuZlL1iyeS2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62009de593c8c5450cd53bf4"
+  },
+  "active": true,
+  "role": "user",
+  "name": "natalia",
+  "lastname": "rendon",
+  "email": "natalia.rendon@gmail.com",
+  "password": "$2a$12$Fo8o..VbCWOxMiczgJOxyuC0VYtqnTI6nk/Rg8QDUMEqHbPe5ocUS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620317b8ed8a9c0e68f7e580"
+  },
+  "active": true,
+  "role": "admin",
+  "name": "patricia",
+  "lastname": "carmona",
+  "email": "patriciacr0107@gmail.com",
+  "password": "$2a$12$oRUUg81dOArVoqamR07N0eYxLZT6WOvFBbud4Fq/x9JzSVzocYyPm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fd5b5c2066f4ee0272e5e"
+  },
+  "active": true,
+  "name": "otro",
+  "lastname": "otro",
+  "email": "otro@h.com",
+  "password": "$2a$12$aRGgax3PnKfLgxCgEOW1ze76FVvHYsVPYdHJgC1/Ec6guCyU4PE/O",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621050c96f75372ee86c7e01"
+  },
+  "active": true,
+  "name": "natalia",
+  "lastname": "perez",
+  "email": "nata@gmail.com",
+  "password": "$2a$12$9hCwM/ooOwu5MnUJX0aUNu8wiCRwOhj6IJGDBELPO64ooSWs946nO",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621050dc6f75372ee86c7e02"
+  },
+  "active": true,
+  "name": "julian",
+  "lastname": "carmona",
+  "email": "julianc@gmail.com",
+  "password": "$2a$12$zaUyUFK88SY3MCPtA6v2IeRqKC3YZwiM11eQ.pwuOxFAm.z9LnMDS",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621050f06f75372ee86c7e03"
+  },
+  "active": true,
+  "name": "keana",
+  "lastname": "vasco",
+  "email": "kv@gmail.com",
+  "password": "$2a$12$9dGmpvZVDySkivZOdQT8OO6hMOY2yCjCy/x9JVOU.3siRiYXDg9Fy",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621050fa6f75372ee86c7e04"
+  },
+  "active": true,
+  "name": "dobby",
+  "lastname": "vasco",
+  "email": "dv@gmail.com",
+  "password": "$2a$12$O721GdE5N9GhuJD987M6leSBGZHQyyZalo0asDuyoHJxRIo/VrFJe",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621051036f75372ee86c7e05"
+  },
+  "active": true,
+  "name": "scar",
+  "lastname": "vasco",
+  "email": "sv@gmail.com",
+  "password": "$2a$12$BP1O.RE45chs2RDHl.5INeuzv.HFmEv7UussR7PM9nxWwnHK6BfNy",
+  "role": "user",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6210597856e8fc2c0c02b472"
+  },
+  "active": true,
+  "name": "jorge",
+  "lastname": "vasco",
+  "email": "jvascov@datawarehouse.com",
+  "password": "$2a$12$O/eJMrwZWH9iEmxUgYqBUOyBFTz1ucR/4SdsShG1yYthGROodq9My",
+  "role": "admin",
+  "__v": 0
+}]

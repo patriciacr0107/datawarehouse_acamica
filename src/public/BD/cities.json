@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "62046cf7fee9df1f60cbcd19"
+  },
+  "name": "medellin",
+  "country": {
+    "$oid": "62046ccdfee9df1f60cbcd18"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6206fdc579cc2e28bc5713a3"
+  },
+  "name": "nueva ciudad 2",
+  "country": {
+    "$oid": "6206f60379cc2e28bc5713a2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620b1b92715c4f06d01f531b"
+  },
+  "name": "buenos aires",
+  "country": {
+    "$oid": "6205d3d905f2341a0c83bef8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620edb83aa566e4a103b9508"
+  },
+  "name": "ciudad 7.1",
+  "country": {
+    "$oid": "620edb78aa566e4a103b9507"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620edba0aa566e4a103b950b"
+  },
+  "name": "ciudad 7.2.1",
+  "country": {
+    "$oid": "620edb96aa566e4a103b950a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620eec65aa566e4a103b9514"
+  },
+  "name": "ciudad 7.2",
+  "country": {
+    "$oid": "620edb78aa566e4a103b9507"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdda2c2066f4ee0272e5f"
+  },
+  "name": "bogotá",
+  "country": {
+    "$oid": "62046ccdfee9df1f60cbcd18"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fddb1c2066f4ee0272e60"
+  },
+  "name": "cali",
+  "country": {
+    "$oid": "62046ccdfee9df1f60cbcd18"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fddd7c2066f4ee0272e61"
+  },
+  "name": "ciudad de méxico",
+  "country": {
+    "$oid": "6206f0fd79cc2e28bc5713a1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620fdde0c2066f4ee0272e62"
+  },
+  "name": "mérida",
+  "country": {
+    "$oid": "6206f0fd79cc2e28bc5713a1"
+  },
+  "__v": 0
+}]

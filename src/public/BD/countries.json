@@ -1,0 +1,82 @@
+[{
+  "_id": {
+    "$oid": "62046ccdfee9df1f60cbcd18"
+  },
+  "name": "colombia",
+  "region": {
+    "$oid": "62046caafee9df1f60cbcd17"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6205d3d905f2341a0c83bef8"
+  },
+  "name": "argentina",
+  "region": {
+    "$oid": "62046caafee9df1f60cbcd17"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6205d51105f2341a0c83befa"
+  },
+  "name": "japon",
+  "region": {
+    "$oid": "6205ce4405f2341a0c83bef3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6206f0fd79cc2e28bc5713a1"
+  },
+  "name": "mexico",
+  "region": {
+    "$oid": "62046ee4fee9df1f60cbcd1b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6206f60379cc2e28bc5713a2"
+  },
+  "name": "nuevo pais 2",
+  "region": {
+    "$oid": "6205cf6005f2341a0c83bef5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6206ff4779cc2e28bc5713a5"
+  },
+  "name": "pais 3",
+  "region": {
+    "$oid": "6205cf9a05f2341a0c83bef6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620700ac79cc2e28bc5713a9"
+  },
+  "name": "pais 7",
+  "region": {
+    "$oid": "6206efaa79cc2e28bc5713a0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620edb78aa566e4a103b9507"
+  },
+  "name": "pias 7",
+  "region": {
+    "$oid": "6207010079cc2e28bc5713ae"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "620edb96aa566e4a103b950a"
+  },
+  "name": "pais 7.2",
+  "region": {
+    "$oid": "6207010079cc2e28bc5713ae"
+  },
+  "__v": 0
+}]
