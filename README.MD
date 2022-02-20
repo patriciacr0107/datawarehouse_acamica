@@ -28,7 +28,7 @@ JWT
 
 Clonar el servidor del repositorio Git
 ```
-$ git clone https://github.com/patriciacr0107/delilah.git
+$ git clone https://github.com/patriciacr0107/datawarehouse_acamica.git
 $ cd ../datawarehouse
 $ npm install
 $ npm run dev
